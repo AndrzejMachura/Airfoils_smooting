@@ -132,5 +132,3 @@ plt.show()
 #Write reusults to text file
 result = np.concatenate((spline_upper[::-1,::] , spline_lower[1:,::]),axis=0)
 np.savetxt(f'{profile_name}_smoothed.csv', result, delimiter=";",fmt='%1.6e')
-
-
